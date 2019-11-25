@@ -1,0 +1,12 @@
+html
+    head
+        title Secured Second Google Page
+    body
+        include ./template.pug
+            if(user)
+                h1 Hi, #{user.displayName} (#{user.id})!
+            else
+                p U are unlogged! Please 
+                    a(href="/auth/google") log in!
+
+            h3 Hello, what's up? <br> Nothing here! 2
